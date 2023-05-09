@@ -25,3 +25,23 @@ print(arrA + arrB)
 print(math.fsum([1,2,3]))
 print(math.gcd(10,20))
 print(math.ceil(5.333))
+
+
+# 나만의 메소드 만들기
+# 내 메소드 활용
+
+import hello as h
+
+print("==================")
+h.helloworld()
+# hello 메소드에 있는 내용 전부를 출력 후에 h.helloworld()를 실행해서 'hello world!!' 두번 나온다.
+# name이라는 값을 원래 메소드 안에서 출력하면 main이라고 나오지만  여기서 실행하면 hello가 나온다.
+# 이를 이용해서 hello 메소드에서 조건을 주어 다른 곳에서는 출력이 되지 않게할 수 있다.
+
+print("__name__ in 1.py : ", __name__)
+
+
+
+# 다른 파일에 있는 메소드 불러오기
+from hong.ai import helloai
+helloai.helloworld()
